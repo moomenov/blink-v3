@@ -6,7 +6,7 @@ export default function Settings({ onLogout }) {
   const { T } = useApp();
   const [saved, setSaved] = useState(false);
   const [form, setForm] = useState({
-    arenaName:'Pro Sport Arena', address:'Chilonzor tumani, 5-ko\'cha', phone:'+998 90 123 45 67', desc:'',
+    arenaName:'Pro Sport Arena', address:'Chilonzor tumani, 5-kocha', phone:'+998 90 123 45 67', desc:'',
     openTime:'08:00', closeTime:'23:00', minBook:'1', weekendPrice:'',
     notifyBooking:true, notifyCancel:true, notifyPayment:true,
   });

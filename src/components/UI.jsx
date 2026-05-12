@@ -81,12 +81,11 @@ export function BackBtn({ onClick }) {
   const { T } = useApp();
   return (
     <button onClick={onClick} style={{
-      background:'none', border:'none', color:T.text,
+      background:T.card+'aa', border:'none', color:T.text,
       fontSize:20, cursor:'pointer', width:36, height:36,
       borderRadius:'50%', display:'flex', alignItems:'center',
       justifyContent:'center', fontFamily:'inherit',
-      background:T.card+'aa',
-    }}>←</button>
+    }}>&#8592;</button>
   );
 }
 
@@ -114,7 +113,7 @@ export function ThemeToggle() {
       cursor:'pointer', fontFamily:'inherit',
       display:'flex', alignItems:'center', gap:6,
     }}>
-      {theme==='dark' ? '☀️ Yorug'' : '🌙 Qorong\'u'}
+      {theme==='dark' ? 'Yorug' : 'Qorongu'}
     </button>
   );
 }
